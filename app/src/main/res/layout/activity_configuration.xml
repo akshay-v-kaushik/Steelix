@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ren"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintHorizontal_bias="0.0"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintVertical_bias="0.0">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#343634"
+        tools:context=".Configuration">
+
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="100dp"
+            android:layout_height="45dp"
+            android:layout_marginTop="510dp"
+            android:text="CLEAR"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/a5"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:inputType="textPersonName"
+            android:text="20mm"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/a4" />
+
+        <EditText
+            android:id="@+id/c5"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/d5"
+            app:layout_constraintStart_toEndOf="@+id/b5"
+            app:layout_constraintTop_toBottomOf="@+id/c4" />
+
+        <TextView
+            android:id="@+id/b5"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/c5"
+            app:layout_constraintStart_toEndOf="@+id/a5"
+            app:layout_constraintTop_toBottomOf="@+id/b4" />
+
+        <TextView
+            android:id="@+id/d5"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="45dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="2"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/c5"
+            app:layout_constraintTop_toBottomOf="@+id/d4" />
+
+        <TextView
+            android:id="@+id/a4"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:inputType="textPersonName"
+            android:text="16mm"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/a3" />
+
+        <TextView
+            android:id="@+id/b4"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/c4"
+            app:layout_constraintStart_toEndOf="@+id/a4"
+            app:layout_constraintTop_toBottomOf="@+id/b3" />
+
+        <TextView
+            android:id="@+id/d4"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="45dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="3"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/c4"
+            app:layout_constraintTop_toBottomOf="@+id/d3" />
+
+        <EditText
+            android:id="@+id/c4"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/d4"
+            app:layout_constraintStart_toEndOf="@+id/b4"
+            app:layout_constraintTop_toBottomOf="@+id/c3" />
+
+        <TextView
+            android:id="@+id/d3"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="45dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="5"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/c3"
+            app:layout_constraintTop_toBottomOf="@+id/d2" />
+
+        <TextView
+            android:id="@+id/a3"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+
+            android:layout_marginTop="40dp"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:inputType="textPersonName"
+            android:text="12mm"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/a2" />
+
+        <TextView
+            android:id="@+id/b3"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/c3"
+            app:layout_constraintStart_toEndOf="@+id/a3"
+            app:layout_constraintTop_toBottomOf="@+id/b2" />
+
+        <EditText
+            android:id="@+id/c3"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/d3"
+            app:layout_constraintStart_toEndOf="@+id/b3"
+            app:layout_constraintTop_toBottomOf="@+id/c2" />
+
+        <TextView
+            android:id="@+id/d2"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="45dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="7"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/c2"
+            app:layout_constraintTop_toBottomOf="@+id/d1" />
+
+        <TextView
+            android:id="@+id/a2"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+
+            android:layout_marginTop="40dp"
+
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:inputType="textPersonName"
+            android:text="10mm"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/a1" />
+
+        <TextView
+            android:id="@+id/b2"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/c2"
+            app:layout_constraintStart_toEndOf="@+id/a2"
+            app:layout_constraintTop_toBottomOf="@+id/b1" />
+
+        <EditText
+            android:id="@+id/c2"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/d2"
+            app:layout_constraintStart_toEndOf="@+id/b2"
+            app:layout_constraintTop_toBottomOf="@+id/c1" />
+
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout"
+            android:layout_width="140dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="246dp"
+            android:layout_marginTop="45dp"
+            android:layout_marginEnd="40dp"
+            android:layout_weight=".28"
+            android:background="@drawable/spinnerbackground"
+            android:backgroundTint="@color/white"
+            android:backgroundTintMode="add"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_actionbar_dropdown" />
+
+            <Spinner
+                android:id="@+id/dropdown"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:addStatesFromChildren="true"
+                android:animationCache="true"
+                android:clickable="true"
+                android:dropDownWidth="wrap_content"
+                android:duplicateParentState="false"
+                android:fontFamily="sans-serif"
+                android:layout_gravity="left"
+                android:background="@android:color/transparent"
+                android:gravity="left"
+                android:spinnerMode="dropdown" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/a1"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+
+            android:layout_marginTop="25dp"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:inputType="textPersonName"
+            android:text=" 8mm"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/dia" />
+
+        <EditText
+            android:id="@+id/c1"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/d1"
+            app:layout_constraintStart_toEndOf="@+id/b1"
+            app:layout_constraintTop_toBottomOf="@+id/h2" />
+
+        <TextView
+            android:id="@+id/b1"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="1"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/c1"
+            app:layout_constraintStart_toEndOf="@+id/a1"
+            app:layout_constraintTop_toBottomOf="@+id/h1" />
+
+        <TextView
+            android:id="@+id/d1"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="45dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:text="10"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/c1"
+            app:layout_constraintTop_toBottomOf="@+id/h3" />
+
+
+        <TextView
+            android:id="@+id/h1"
+            android:layout_width="83dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="Bundles"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/h2"
+            app:layout_constraintStart_toEndOf="@+id/dia"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/dia"
+            android:layout_width="65dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="monospace"
+            android:text=" Dia"
+            android:textAlignment="viewStart"
+            android:textColor="#FFFFFF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/h1"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/h2"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="5dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="Kgs"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/h3"
+            app:layout_constraintStart_toEndOf="@+id/h1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/h3"
+            android:layout_width="75dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="120dp"
+            android:layout_marginEnd="40dp"
+            android:fontFamily="monospace"
+            android:gravity="center"
+            android:text="Rods"
+            android:textColor="#FFFFFF"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/h2"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="220dp"
+            android:layout_marginTop="580dp"
+            android:layout_marginEnd="60dp"
+            android:layout_marginBottom="230dp"
+            android:text="DELETE"
+            android:textSize="14sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="120dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="580dp"
+            android:layout_marginEnd="220dp"
+            android:text="ADD"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <EditText
+            android:id="@+id/company"
+            android:layout_width="125dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="45dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif"
+            android:gravity="center"
+            android:inputType="text"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>
