@@ -16,7 +16,7 @@ import com.example.spinnertrial.*;
 public class dictionary {
 
     public Dictionary function_values = new Hashtable();
-    public String[][] keys = new String[][]{{"b8","b10","b12","b16","b20"},{"k8","k10","k12","k16","k20"},{"r8","r10","r12","r16","r20"}};
+    public String[][] keys = new String[][]{{"b8","b10","b12","b16","b20","b25","b32"},{"k8","k10","k12","k16","k20","k25","k32"},{"r8","r10","r12","r16","r20","r25","r32"}};
     Context context;
 
 
@@ -72,6 +72,14 @@ public class dictionary {
         calc_interface b20r=(x)->(int)Math.ceil(x*rod.get(4));
         function_values.put("b20",new calc_interface[]{b20k,b20r});
 
+        calc_interface b25k=(x)->(int)Math.ceil(x*kg.get(5));
+        calc_interface b25r=(x)->(int)Math.ceil(x*rod.get(5));
+        function_values.put("b25",new calc_interface[]{b25k,b25r});
+
+        calc_interface b32k=(x)->(int)Math.ceil(x*kg.get(6));
+        calc_interface b32r=(x)->(int)Math.ceil(x*rod.get(6));
+        function_values.put("b32",new calc_interface[]{b32k,b32r});
+
 
 
 
@@ -96,6 +104,14 @@ public class dictionary {
         calc_interface k20r=(x)->(int)Math.ceil((x*rod.get(4))/kg.get(4));
         function_values.put("k20",new calc_interface[]{k20b,k20r});
 
+        calc_interface k25b=(x)->(int)Math.ceil(x/kg.get(5));
+        calc_interface k25r=(x)->(int)Math.ceil((x*rod.get(5))/kg.get(5));
+        function_values.put("k25",new calc_interface[]{k25b,k25r});
+
+        calc_interface k32b=(x)->(int)Math.ceil(x/kg.get(6));
+        calc_interface k32r=(x)->(int)Math.ceil((x*rod.get(6))/kg.get(6));
+        function_values.put("k32",new calc_interface[]{k32b,k32r});
+
 
 
 
@@ -118,6 +134,14 @@ public class dictionary {
         calc_interface r20b=(x)->(int)Math.ceil(x/rod.get(4));
         calc_interface r20k=(x)->(int)Math.ceil((x*kg.get(4))/rod.get(4));;
         function_values.put("r20",new calc_interface[]{r20b,r20k});
+
+        calc_interface r25b=(x)->(int)Math.ceil(x/rod.get(5));
+        calc_interface r25k=(x)->(int)Math.ceil((x*kg.get(5))/rod.get(5));;
+        function_values.put("r25",new calc_interface[]{r25b,r25k});
+
+        calc_interface r32b=(x)->(int)Math.ceil(x/rod.get(6));
+        calc_interface r32k=(x)->(int)Math.ceil((x*kg.get(6))/rod.get(6));;
+        function_values.put("r32",new calc_interface[]{r32b,r32k});
     }
 
 

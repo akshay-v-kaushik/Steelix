@@ -18,6 +18,145 @@
         tools:context=".MainActivity">
 
 
+        <EditText
+            android:id="@+id/b7"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:inputType="number"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/c7"
+            app:layout_constraintStart_toEndOf="@+id/a7"
+            app:layout_constraintTop_toBottomOf="@+id/b6" />
+
+        <TextView
+            android:id="@+id/a7"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:inputType="textPersonName"
+            android:text="32mm"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/a6" />
+
+        <TextView
+            android:id="@+id/d7"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="45dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/c7"
+            app:layout_constraintTop_toBottomOf="@+id/d6" />
+
+        <TextView
+            android:id="@+id/c7"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/d7"
+            app:layout_constraintStart_toEndOf="@+id/b7"
+            app:layout_constraintTop_toBottomOf="@+id/c6" />
+
+        <EditText
+            android:id="@+id/b6"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:inputType="number"
+            android:textAlignment="center"
+
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/c6"
+            app:layout_constraintStart_toEndOf="@+id/a6"
+            app:layout_constraintTop_toBottomOf="@+id/b5" />
+
+        <TextView
+            android:id="@+id/a6"
+            android:layout_width="70dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+
+            android:layout_marginTop="30dp"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:inputType="textPersonName"
+            android:text="25mm"
+            android:textAlignment="viewStart"
+            android:textColor="#ffffff"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/a5" />
+
+        <TextView
+            android:id="@+id/d6"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="45dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/c6"
+            app:layout_constraintTop_toBottomOf="@+id/d5" />
+
+        <TextView
+            android:id="@+id/c6"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            app:layout_constraintEnd_toStartOf="@+id/d6"
+            app:layout_constraintStart_toEndOf="@+id/b6"
+            app:layout_constraintTop_toBottomOf="@+id/c5" />
+
         <RelativeLayout
             android:id="@+id/relativeLayout"
             android:layout_width="150dp"
@@ -101,11 +240,29 @@
 
 
         <TextView
+            android:id="@+id/t2"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="5dp"
+            android:background="@color/white"
+            android:fontFamily="sans-serif-black"
+            android:gravity="center"
+            android:textAlignment="center"
+            android:textColor="#000000"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/t3"
+            app:layout_constraintStart_toEndOf="@+id/t1"
+            app:layout_constraintTop_toBottomOf="@+id/b7" />
+
+        <TextView
             android:id="@+id/t4"
             android:layout_width="80dp"
             android:layout_height="30dp"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="45dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="45dp"
             android:background="@color/white"
             android:fontFamily="sans-serif-black"
@@ -116,7 +273,7 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toEndOf="@+id/t3"
-            app:layout_constraintTop_toBottomOf="@+id/d5" />
+            app:layout_constraintTop_toBottomOf="@+id/d7" />
 
         <TextView
             android:id="@+id/t1"
@@ -124,7 +281,7 @@
             android:layout_height="30dp"
             android:layout_marginStart="20dp"
 
-            android:layout_marginTop="45dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="5dp"
             android:ems="10"
             android:fontFamily="monospace"
@@ -136,32 +293,14 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/t2"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/a5" />
-
-        <TextView
-            android:id="@+id/t2"
-            android:layout_width="80dp"
-            android:layout_height="30dp"
-            android:layout_marginStart="10dp"
-            android:layout_marginTop="45dp"
-            android:layout_marginEnd="5dp"
-            android:background="@color/white"
-            android:fontFamily="sans-serif-black"
-            android:gravity="center"
-            android:textAlignment="center"
-            android:textColor="#000000"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintEnd_toStartOf="@+id/t3"
-            app:layout_constraintStart_toEndOf="@+id/t1"
-            app:layout_constraintTop_toBottomOf="@+id/b5" />
+            app:layout_constraintTop_toBottomOf="@+id/a7" />
 
         <TextView
             android:id="@+id/t3"
             android:layout_width="80dp"
             android:layout_height="30dp"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="45dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="5dp"
             android:background="@color/white"
             android:fontFamily="sans-serif-black"
@@ -172,7 +311,7 @@
             android:textStyle="bold"
             app:layout_constraintEnd_toStartOf="@+id/t4"
             app:layout_constraintStart_toEndOf="@+id/t2"
-            app:layout_constraintTop_toBottomOf="@+id/c5" />
+            app:layout_constraintTop_toBottomOf="@+id/c7" />
 
         <TextView
             android:id="@+id/a5"
@@ -180,7 +319,7 @@
             android:layout_height="30dp"
             android:layout_marginStart="20dp"
 
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="30dp"
             android:ems="10"
             android:fontFamily="monospace"
             android:inputType="textPersonName"
@@ -196,7 +335,7 @@
             android:layout_width="80dp"
             android:layout_height="30dp"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="5dp"
             android:background="@color/white"
             android:fontFamily="sans-serif-black"
@@ -213,7 +352,7 @@
             android:layout_width="80dp"
             android:layout_height="30dp"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="5dp"
             android:background="@color/white"
             android:fontFamily="sans-serif-black"
@@ -231,7 +370,7 @@
             android:layout_width="80dp"
             android:layout_height="30dp"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="45dp"
             android:background="@color/white"
             android:fontFamily="sans-serif-black"
@@ -249,7 +388,7 @@
             android:layout_height="30dp"
             android:layout_marginStart="20dp"
 
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="30dp"
             android:ems="10"
             android:fontFamily="monospace"
             android:inputType="textPersonName"
@@ -265,7 +404,7 @@
             android:layout_width="80dp"
             android:layout_height="30dp"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="5dp"
             android:background="@color/white"
             android:fontFamily="sans-serif-black"
@@ -283,7 +422,7 @@
             android:layout_width="80dp"
             android:layout_height="30dp"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="45dp"
             android:background="@color/white"
             android:fontFamily="sans-serif-black"
@@ -300,7 +439,7 @@
             android:layout_width="80dp"
             android:layout_height="30dp"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="5dp"
             android:background="@color/white"
             android:fontFamily="sans-serif-black"
@@ -317,7 +456,7 @@
             android:layout_width="80dp"
             android:layout_height="30dp"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="45dp"
             android:background="@color/white"
             android:fontFamily="sans-serif-black"
@@ -335,7 +474,7 @@
             android:layout_height="30dp"
             android:layout_marginStart="20dp"
 
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="30dp"
             android:ems="10"
             android:fontFamily="monospace"
             android:inputType="textPersonName"
@@ -351,7 +490,7 @@
             android:layout_width="80dp"
             android:layout_height="30dp"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="5dp"
             android:background="@color/white"
             android:fontFamily="sans-serif-black"
@@ -369,7 +508,7 @@
             android:layout_width="80dp"
             android:layout_height="30dp"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="5dp"
             android:background="@color/white"
             android:fontFamily="sans-serif-black"
@@ -386,7 +525,7 @@
             android:layout_width="80dp"
             android:layout_height="30dp"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="45dp"
             android:background="@color/white"
             android:fontFamily="sans-serif-black"
@@ -404,7 +543,7 @@
             android:layout_height="30dp"
             android:layout_marginStart="20dp"
 
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="30dp"
             android:ems="10"
             android:fontFamily="monospace"
             android:inputType="textPersonName"
@@ -420,7 +559,7 @@
             android:layout_width="80dp"
             android:layout_height="30dp"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="5dp"
             android:background="@color/white"
             android:fontFamily="sans-serif-black"
@@ -438,7 +577,7 @@
             android:layout_width="80dp"
             android:layout_height="30dp"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="30dp"
             android:layout_marginEnd="5dp"
             android:background="@color/white"
             android:fontFamily="sans-serif-black"
@@ -456,7 +595,7 @@
             android:layout_width="70dp"
             android:layout_height="30dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="165dp"
+            android:layout_marginTop="160dp"
 
             android:ems="10"
             android:fontFamily="monospace"
@@ -473,7 +612,7 @@
             android:layout_width="80dp"
             android:layout_height="30dp"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="165dp"
+            android:layout_marginTop="160dp"
             android:layout_marginEnd="5dp"
             android:background="@color/white"
             android:fontFamily="sans-serif-black"
@@ -490,7 +629,7 @@
             android:layout_width="80dp"
             android:layout_height="30dp"
             android:layout_marginStart="10dp"
-            android:layout_marginTop="165dp"
+            android:layout_marginTop="160dp"
             android:layout_marginEnd="5dp"
             android:background="@color/white"
             android:fontFamily="sans-serif-black"
@@ -508,7 +647,7 @@
             android:layout_width="80dp"
             android:layout_height="30dp"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="165dp"
+            android:layout_marginTop="160dp"
             android:layout_marginEnd="45dp"
             android:background="@color/white"
             android:fontFamily="sans-serif-black"
@@ -585,35 +724,37 @@
             app:layout_constraintStart_toEndOf="@+id/h2"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <Button
-            android:id="@+id/reset"
-            android:layout_width="175dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="150dp"
-            android:layout_marginTop="26dp"
-            android:layout_marginEnd="150dp"
-            android:layout_marginBottom="230dp"
-            android:text="RESET"
-            android:textSize="16sp"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/t4" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="100"
+            app:layout_constraintTop_toBottomOf="@+id/t2"
+            tools:layout_editor_absoluteX="0dp">
 
 
-        <Button
-            android:id="@+id/share"
-            android:layout_width="175dp"
-            android:layout_height="50dp"
-            android:layout_marginStart="150dp"
-            android:layout_marginTop="32dp"
-            android:layout_marginEnd="150dp"
-            android:onClick="export"
-            android:text="SHARE"
-            android:textSize="16sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/reset" />
+            <Button
+                android:id="@+id/reset"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="50"
+                android:text="RESET"
+                android:textSize="16sp"
+                tools:layout_editor_absoluteX="19dp" />
+
+            <Button
+                android:id="@+id/share"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:layout_weight="50"
+                android:onClick="export"
+                android:text="SHARE"
+                android:textSize="16sp" />
+        </LinearLayout>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

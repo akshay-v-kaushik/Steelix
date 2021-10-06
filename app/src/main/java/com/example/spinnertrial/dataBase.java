@@ -22,11 +22,11 @@ public class dataBase extends SQLiteOpenHelper {//******empty name, special char
     public static final String COLUMN_KG = "KGs";
     public static final String COLUMN_ROD = "RODS";
 
-    String dia[] = {"8mm", "10mm", "12mm", "16mm", "20mm"};
+    String dia[] = {"8mm", "10mm", "12mm", "16mm", "20mm", "25mm", "32mm"};
     String nam = "Default_Preset";
     Context con;
-    int[] kg = new int[]{47,53,53,56,59};
-    int[] rod = new int[]{10,7,5,3,2};
+    int[] kg = new int[]{47,53,53,56,59,46,76};
+    int[] rod = new int[]{10,7,5,3,2,1,1};
 
 
 
@@ -66,7 +66,7 @@ public class dataBase extends SQLiteOpenHelper {//******empty name, special char
         SQLiteDatabase db = this.getWritableDatabase();
 
         ContentValues cv = new ContentValues();
-        for(int i=0;i<5;i++)
+        for(int i=0;i<7;i++)
         {
             cv.put(COLUMN_DIA,dia[i]);
 
@@ -113,7 +113,7 @@ public class dataBase extends SQLiteOpenHelper {//******empty name, special char
         ContentValues cv = new ContentValues();
         long insert=0, check = 0;
 
-        for(int i=0;i<5;i++)
+        for(int i=0;i<7;i++)
         {
             cv.put(COLUMN_DIA,dia[i]);
             try {

@@ -94,10 +94,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     int total[] = new int[3];
     int[] hid = {R.id.h1, R.id.h2, R.id.h3};
     int[] tid = {R.id.t2, R.id.t3, R.id.t4};
-    int[] aid = {R.id.a1, R.id.a2, R.id.a3, R.id.a4, R.id.a5};
-    int[] bid = {R.id.b1, R.id.b2, R.id.b3, R.id.b4, R.id.b5};
-    int[] cid = {R.id.c1, R.id.c2, R.id.c3, R.id.c4, R.id.c5};
-    int[] did = {R.id.d1, R.id.d2, R.id.d3, R.id.d4, R.id.d5};
+    int[] aid = {R.id.a1, R.id.a2, R.id.a3, R.id.a4, R.id.a5, R.id.a6, R.id.a7};
+    int[] bid = {R.id.b1, R.id.b2, R.id.b3, R.id.b4, R.id.b5, R.id.b6, R.id.b7};
+    int[] cid = {R.id.c1, R.id.c2, R.id.c3, R.id.c4, R.id.c5, R.id.c6, R.id.c7};
+    int[] did = {R.id.d1, R.id.d2, R.id.d3, R.id.d4, R.id.d5, R.id.d6, R.id.d7};
 
 
     dictionary dict = new dictionary();
@@ -153,7 +153,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         totalheading = findViewById(R.id.t1);
         pdfname = findViewById(R.id.pdfname1);
 
-        for(int j=0;j<5;j++)
+        for(int j=0;j<7;j++)
         {
             if(j<3)
             {
@@ -233,7 +233,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             }
         };
 
-        for(int j=0; j<5; j++)
+        for(int j=0; j<7; j++)
         {
             b[j].addTextChangedListener(textwatcher);
         }
@@ -244,7 +244,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
                 Toast.makeText(getApplicationContext(), "Reset", Toast.LENGTH_LONG).show();
 
-                for(int j=0; j<5; j++) {
+                for(int j=0; j<7; j++) {
                     b[j].setText("");
                 }
                 for(int j=0; j<3; j++) {
@@ -388,7 +388,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             Toast.makeText(getApplicationContext(), units[position], Toast.LENGTH_LONG).show();
             choice = spin.getSelectedItem().toString();
 
-            for (int j = 0; j < 5; j++) {
+            for (int j = 0; j < 7; j++) {
                 b[j].setText("");
             }
             for (int j = 0; j < 3; j++) {
@@ -416,7 +416,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         }
         else if(arg0.getId()==R.id.comp_tables)
         {
-            for (int j = 0; j < 5; j++) {
+            for (int j = 0; j < 7; j++) {
                 b[j].setText("");
             }
             for (int j = 0; j < 3; j++) {
@@ -459,7 +459,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         dict.calculate();
 
-        for(int j=0;j<5;j++)
+        for(int j=0;j<7;j++)
         {
             if (!b[j].getText().toString().equals("")) {
                 calc_interface[] x= (calc_interface[]) dict.function_values.get(keys[0][j]);
@@ -484,7 +484,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         dict.calculate();
 
-        for(int j=0;j<5;j++) {
+        for(int j=0;j<7;j++) {
             if (!b[j].getText().toString().equals("")) {
                 calc_interface[] x= (calc_interface[]) dict.function_values.get(keys[1][j]);
                 for(int k=0;k<2;k++) {
@@ -508,7 +508,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
         dict.calculate();
 
-        for(int j=0;j<5;j++) {
+        for(int j=0;j<7;j++) {
             if (!b[j].getText().toString().equals("")) {
                 calc_interface[] x= (calc_interface[]) dict.function_values.get(keys[2][j]);
                 for(int k=0;k<2;k++) {
@@ -526,15 +526,15 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     void totalcalc(){
 
-        int bt[] = new int[5];
-        int ct[] = new int[5];
-        int dt[] = new int[5];
+        int bt[] = new int[7];
+        int ct[] = new int[7];
+        int dt[] = new int[7];
 
         for (int j = 0; j < 3; j++) {
             total[j] = 0;
         }
 
-        for(int j=0;j<5;j++) {
+        for(int j=0;j<7;j++) {
 
             if (!b[j].getText().toString().equals("")) {
                 bt[j] = Integer.parseInt(b[j].getText().toString());

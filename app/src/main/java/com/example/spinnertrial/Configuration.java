@@ -40,8 +40,8 @@ public class Configuration extends AppCompatActivity implements AdapterView.OnIt
     EditText c[] = new EditText[' '];
     TextView d[] = new TextView[' '];
     Spinner spin;
-    int[] cid = {R.id.c1, R.id.c2, R.id.c3, R.id.c4, R.id.c5};
-    int[] did = {R.id.d1, R.id.d2, R.id.d3, R.id.d4, R.id.d5};
+    int[] cid = {R.id.c1, R.id.c2, R.id.c3, R.id.c4, R.id.c5, R.id.c6,R.id.c7};
+    int[] did = {R.id.d1, R.id.d2, R.id.d3, R.id.d4, R.id.d5, R.id.d6,R.id.d7};
     dictionary dict;
     ArrayList<String> dropItems;
 
@@ -74,7 +74,7 @@ public class Configuration extends AppCompatActivity implements AdapterView.OnIt
         //Setting the ArrayAdapter data on the Spinner
         spin.setAdapter(aa);
 
-        for(int j=0;j<5;j++)
+        for(int j=0;j<7;j++)
         {
             c[j] = findViewById(cid[j]);
             d[j] = findViewById(did[j]);
@@ -97,7 +97,7 @@ public class Configuration extends AppCompatActivity implements AdapterView.OnIt
                 {
                     boolean noNull=true;
 
-                    for(int j=0; j<5; j++) {
+                    for(int j=0; j<7; j++) {
                         if(c[j].getText().toString().equals("") || c[j].getText().toString().equals("0"))
                         {
                             noNull=false;
@@ -196,7 +196,7 @@ public class Configuration extends AppCompatActivity implements AdapterView.OnIt
             public void onClick(View v) {
                 Toast.makeText(getApplicationContext(), "Cleared", Toast.LENGTH_LONG).show();
 
-                for(int j=0; j<5; j++) {
+                for(int j=0; j<7; j++) {
                     c[j].setText("");
                 }
             }
@@ -236,7 +236,7 @@ public class Configuration extends AppCompatActivity implements AdapterView.OnIt
         datakg = database.getValues("KGs");
         datarod = database.getValues("RODS");
 
-        for(int j=0;j<5;j++)
+        for(int j=0;j<7;j++)
         {
             c[j].setText(datakg.get(j).toString());
         }
