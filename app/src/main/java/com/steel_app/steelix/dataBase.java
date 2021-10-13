@@ -1,4 +1,4 @@
-package com.example.spinnertrial;
+package com.example.steelix;
 
 
 import android.content.ContentValues;
@@ -6,12 +6,8 @@ import android.content.Context;
 import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
-import android.widget.EditText;
 import android.widget.TextView;
 
-import androidx.annotation.Nullable;
-
-import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
 

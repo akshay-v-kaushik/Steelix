@@ -1,4 +1,4 @@
-package com.example.spinnertrial;
+package com.example.steelix;
 
 import org.junit.Test;
 
