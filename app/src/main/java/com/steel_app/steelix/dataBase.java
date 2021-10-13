@@ -1,4 +1,4 @@
-package com.example.steelix;
+package com.steel_app.steelix;
 
 
 import android.content.ContentValues;

@@ -2,16 +2,12 @@ package Dictionary;
 
 
 import android.content.Context;
-import android.database.sqlite.SQLiteDatabase;
-import android.view.View;
 
-import java.util.ArrayList;
 import java.util.Dictionary;
 import java.util.Hashtable;
 import java.util.List;
 
-import com.example.spinnertrial.dataBase;
-import com.example.spinnertrial.*;
+import com.steel_app.steelix.dataBase;
 
 public class dictionary {
 

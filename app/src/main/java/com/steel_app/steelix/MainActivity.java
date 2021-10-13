@@ -1,4 +1,4 @@
-package com.example.steelix;
+package com.steel_app.steelix;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
